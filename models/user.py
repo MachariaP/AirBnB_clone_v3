@@ -25,17 +25,3 @@ class User(BaseModel, Base):
         password = ''
         first_name = ''
         last_name = ''
-
-
-    @property
-    def password(self):
-        """Password getter"""
-        return self.password
-
-    @password.setter
-    def password(self, pwd):
-        """Password setter"""
-        if pwd is not None and type(pwd) is str:
-            self.password = hashlib.md5(pwd.encode()).hexdigest()
-        else:
-            self.password = None
