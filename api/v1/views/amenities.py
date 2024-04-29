@@ -11,7 +11,7 @@ from flasgger.utils import swag_from
 @swag_from('documentation/amenity/all_amenities.yml')
 def get_amenities():
     """
-    Retrieves a list of all the amenities
+    Retrieves a list of all amenities
     """
     all_amenities = storage.all(Amenity).values()
     list_amenities = []
