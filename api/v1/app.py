@@ -36,6 +36,7 @@ app.config['SWAGGER'] = {
     'uiversion': 3
 }
 
+""" swagger configuration """
 Swagger(app)
 
 
